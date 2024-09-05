@@ -905,8 +905,23 @@
         var acc = document.getElementsByClassName("accordion");
         var i;
 
+        // Open the first accordion by default
+        acc[0].classList.add("active");
+        var firstPanel = acc[0].nextElementSibling;
+        firstPanel.style.display = "block";
+
         for (i = 0; i < acc.length; i++) {
             acc[i].addEventListener("click", function () {
+                // Close all other accordion panels
+                for (var j = 0; j < acc.length; j++) {
+                    var otherPanel = acc[j].nextElementSibling;
+                    if (otherPanel.style.display === "block" && acc[j] !== this) {
+                        otherPanel.style.display = "none";
+                        acc[j].classList.remove("active");
+                    }
+                }
+
+                // Toggle the clicked accordion
                 this.classList.toggle("active");
                 var panel = this.nextElementSibling;
                 if (panel.style.display === "block") {
