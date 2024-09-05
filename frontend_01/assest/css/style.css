@@ -1171,7 +1171,7 @@ h1 {
 
 .map-section {
     position: relative;
-    background-image: url(/assest/img/map.jpeg);
+    background-image: url(../img/map.jpeg);
     background-size: cover;
     min-height: 200px;
     padding: 40px 0;
@@ -2209,7 +2209,7 @@ button:hover {
     }
     .about-us p {
         text-align: center;
-        max-width: 368px;
+        max-width: 328px;
     }
     .mobile {
         position: absolute;
@@ -2261,13 +2261,13 @@ button:hover {
     }
 
     .banner-info span {
-        font-size: 64px;
+        font-size: 54px;
     }
 
   
 
     .a1 {
-        width: 30%;
+        width: 38%;
     }
 
     .banner-info {
@@ -2378,12 +2378,11 @@ button:hover {
     .subscribe {
         width: 35%;
     }
-
     .swiper-slide p {
         padding-top: 0px;
         font-size: 15px;
         margin-bottom: -8px;
-        margin-left: -21px;
+        margin-left: 18px;
     }
 }
 
